@@ -1,10 +1,12 @@
+import Layout from "../components/Layout";
 import Meta from "../components/Meta";
 import ProjectCard from "../components/ProjectCard";
 
 export default function ProjectsPage() {
 	return (
-		<>
+		<Layout>
 			<Meta title="Projects" />
+
 			<h1>Projects</h1>
 			<h2>Projects I’m working on or shipped already</h2>
 
@@ -50,6 +52,6 @@ export default function ProjectsPage() {
 				<p>The main purpose of HashtagCalendar is to provide some inspiration for small businesses or individuals when they want to create some content on Instagram but have no idea what that should be about.</p>
 				<p>HashtagCalendar provides daily and holiday hashtag suggestions with a short description and other suggested hashtags.</p>
 			</ProjectCard>
-		</>
+		</Layout>
 	);
 }
