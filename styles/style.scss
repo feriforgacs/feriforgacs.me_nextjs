@@ -1,7 +1,12 @@
 @import "normalize";
 @import "fonts";
 @import "layout";
+@import "typograhy";
 @import "components/project_card";
+@import "components/header";
+@import "components/footer";
+@import "components/avatar";
+@import "components/post_list_item";
 
 html,
 body {
@@ -17,7 +22,7 @@ strong {
 }
 
 a {
-	color: #ff79c6;
+	color: #50fa7b;
 
 	&:hover {
 		color: #8be9fd;

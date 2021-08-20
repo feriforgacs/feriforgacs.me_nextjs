@@ -1,0 +1,27 @@
+header {
+	background: #343746;
+	border-bottom: 1px solid #191a21;
+	font-size: 0.8rem;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	nav {
+		margin: 0 auto;
+		max-width: 600px;
+
+		ul {
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+
+			a {
+				display: block;
+				padding: 1rem;
+				text-decoration: none;
+			}
+		}
+	}
+}

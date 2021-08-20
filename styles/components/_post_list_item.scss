@@ -1,0 +1,26 @@
+.post-list-item {
+	background: #343746;
+	border-top: 1px solid #94527e;
+	border-left: 1px solid #191a21;
+	border-right: 1px solid #191a21;
+	border-bottom: 1px solid #191a21;
+	margin: 2rem auto;
+	padding: 1rem;
+
+	a {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		text-decoration: none;
+	}
+
+	&__title {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__date {
+		color: #6070a1;
+		font-size: 0.8rem;
+		text-align: right;
+	}
+}

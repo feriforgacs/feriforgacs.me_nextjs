@@ -1,0 +1,17 @@
+footer {
+	align-items: center;
+	background: #111117;
+	border-top: 1px solid #191a21;
+	color: #6070a1;
+	font-size: 0.7rem;
+	padding: 1rem;
+
+	.footer__body {
+		margin: 0 auto;
+		max-width: 600px;
+	}
+
+	a {
+		color: #6070a1;
+	}
+}
