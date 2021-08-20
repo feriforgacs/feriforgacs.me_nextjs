@@ -2,11 +2,14 @@
 @import "fonts";
 @import "layout";
 @import "typograhy";
+
 @import "components/project_card";
 @import "components/header";
 @import "components/footer";
 @import "components/avatar";
 @import "components/post_list_item";
+
+@import "pages/post";
 
 html,
 body {

@@ -11,6 +11,10 @@
 		font-size: 1.2rem;
 		line-height: 2rem;
 		text-decoration: none;
+
+		&:visited {
+			color: #8be9fd;
+		}
 	}
 
 	&__title {

@@ -1,11 +1,11 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Layout({ children }) {
+export default function Layout({ classNames = "", children }) {
 	return (
 		<>
 			<Header />
-			<main>{children}</main>
+			<main className={classNames}>{children}</main>
 			<Footer />
 		</>
 	);
