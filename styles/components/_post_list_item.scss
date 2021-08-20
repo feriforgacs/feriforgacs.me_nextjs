@@ -1,15 +1,14 @@
 .post-list-item {
-	background: #343746;
-	border-top: 1px solid #94527e;
-	border-left: 1px solid #191a21;
-	border-right: 1px solid #191a21;
-	border-bottom: 1px solid #191a21;
-	margin: 2rem auto;
-	padding: 1rem;
+	background-image: url("/assets/post-icon.svg");
+	background-position: 0 5px;
+	background-repeat: no-repeat;
+	margin: 2rem auto 4rem;
 
 	a {
+		display: block;
 		font-size: 1.2rem;
 		line-height: 2rem;
+		padding-left: 2rem;
 		text-decoration: none;
 
 		&:visited {
@@ -25,6 +24,6 @@
 	&__date {
 		color: #6070a1;
 		font-size: 0.8rem;
-		text-align: right;
+		padding-left: 2rem;
 	}
 }

@@ -15,12 +15,6 @@ export default function Footer() {
 					</a>
 				</p>
 				<p>
-					Design inspired by{" "}
-					<a href="https://draculatheme.com/" target="_blank" rel="noreferrer noopener">
-						Dracula
-					</a>
-				</p>
-				<p>
 					View the source on{" "}
 					<a href="https://github.com/feriforgacs/feriforgacs.me_nextjs" target="_blank" rel="noreferrer noopener">
 						GitHub
