@@ -3,9 +3,10 @@ import { useRouter } from "next/router";
 
 export default function Meta({ title = "", description = process.env.meta.description, ogImage = process.env.meta.ogImage }) {
 	const router = useRouter();
+	const displayTitle = title ? `${title} - ${process.env.meta.title}` : `${process.env.meta.title}`;
 	return (
 		<Head>
-			<title>{`${title} - ${process.env.meta.title}`}</title>
+			<title>{displayTitle}</title>
 			<meta name="description" content={description} />
 			<meta property="og:url" content={router.pathname} />
 			<meta property="og:site_name" content={title} />

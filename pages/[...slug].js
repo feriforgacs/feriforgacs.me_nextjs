@@ -1,8 +1,8 @@
 import { format } from "date-fns";
 import fs from "fs";
-import matter from "gray-matter";
 import marked from "marked";
 import path from "path";
+import Link from "next/link";
 import { getPostData } from "../helpers/PostHelpers";
 import Layout from "../components/Layout";
 
@@ -11,9 +11,15 @@ export default function PostPage({ post }) {
 		<Layout classNames="post-page">
 			<div className="post">
 				<div className="post__body">
+					<Link href="/blog">
+						<a className="link-back">&larr; Back to posts</a>
+					</Link>
 					<h1 className="post__title">{post.title}</h1>
 					<p className="post__date">{format(new Date(post.date), "dd MMMM y")}</p>
 					<div className="post__content" dangerouslySetInnerHTML={{ __html: marked(post.content) }} />
+					<Link href="/blog">
+						<a className="link-back">&larr; Back to posts</a>
+					</Link>
 				</div>
 			</div>
 		</Layout>
