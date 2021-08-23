@@ -1,3 +1,5 @@
+$content_width: 650px;
+
 @import "normalize";
 @import "fonts";
 @import "layout";
@@ -10,6 +12,7 @@
 @import "components/post_list_item";
 @import "components/project_card";
 
+@import "pages/home";
 @import "pages/post";
 
 html,
@@ -17,8 +20,12 @@ body {
 	background-color: #21222c;
 	color: #f8f8f2;
 	font-family: "JetBrainsMono", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 150%;
+
+	@media only screen and (min-width: 768px) {
+		font-size: 18px;
+	}
 }
 
 strong {

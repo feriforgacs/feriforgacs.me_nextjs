@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../components/Layout";
 import Meta from "../components/Meta";
 import Avatar from "../components/Avatar";
@@ -9,36 +10,39 @@ export default function Home({ posts }) {
 		<Layout>
 			<Meta />
 			<Avatar />
-			<h1>
-				<span role="img" aria-label="waving hand emoji">
-					👋
-				</span>{" "}
-				Hey, it’s Feri!
-			</h1>
-			<p>
-				<em>{"//"} pronounced like ferry</em>{" "}
-				<span role="img" aria-label="smile emoji">
-					😄
-				</span>
-			</p>
+			<div className="intro">
+				<h1>
+					<span role="img" aria-label="waving hand emoji">
+						👋
+					</span>{" "}
+					Hey, it’s Feri!
+				</h1>
+				<p>
+					<em>{"//"} pronounced like ferry</em>{" "}
+					<span role="img" aria-label="smile emoji">
+						😄
+					</span>
+				</p>
 
-			<p>I’m a designer, developer, mostly focusing on web things but open-minded to mobile development and hardware technologies as well. One day it would be great if I could learn to bake all kinds of pastry too 😅</p>
+				<p>
+					Lately I started to {`"`}tag{`"`} myself as a digital tinkerer to cover all the things I&apos;m interested in and have a basic or advanced knowledge.
+				</p>
 
-			<p>I have more than 12 years of experience in web development. I started as an ActionScript developer, then learned the basics of PHP, HTML, JS, and some server configuration stuff as well. With this knowledge stack, I could build most of the things I wanted to.</p>
+				<p>I&apos;m taking ideas from thoughts through MVPs to matured products. My main focus is on web based apps but also interested in mobile development and hardware technologies.</p>
 
-			<p>In the past 5 years I had the opportunity to grow my management skills, as the head of development team at the biggest social media agency in Hungary.</p>
+				<p>
+					To learn more about me, head over to my <Link href="/bio">bio</Link>.
+				</p>
 
-			<p>To fulfill my dreams about the bakery stuff (kidding), in January 2019 I left my 9 to 5 job and jumped back on the dev train. Now I build products to solve my own (and hopefully others’) problems.</p>
+				<p>
+					Currently, I&apos;m focusing on <a href="https://twis.io?ref=feriforgacs.me">twis.io</a>, a tool that people can use to create story-like experiences to grow their database.
+				</p>
+			</div>
 
-			<p>
-				My social network of choice is Twitter (
-				<a href="https://twitter.com/@feriforgacs" target="_blank" rel="noopener noreferrer">
-					@feriforgacs
-				</a>
-				) but in most cases I’m on a read only mode. I’ll try to share my progress more often there 🤞, so if you are interested, feel free to follow me. For more detailed information about my thoughts, ideas and the projects I’m working on you can take a look at my blog posts.
-			</p>
-
-			<PostList posts={posts} />
+			<div className="latest-posts">
+				<h3>Latest posts</h3>
+				<PostList posts={posts} limit={5} />
+			</div>
 		</Layout>
 	);
 }
