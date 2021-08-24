@@ -22,9 +22,13 @@ export function getPostList() {
 		const postWithMeta = fs.readFileSync(path.join("posts", filename), "utf-8");
 		const {
 			data: { title, image },
+			content,
 		} = matter(postWithMeta);
 
-		return { slug, title, image, postDate };
+		// get post lead
+		const lead = getPostLead(content);
+
+		return { slug, title, lead, image, postDate };
 	});
 
 	return posts;
@@ -52,4 +56,13 @@ export function getPostData(slug) {
 	};
 
 	return post;
+}
+
+/**
+ * Get post lead from the post content
+ * @param {string} content post content
+ * @returns {string} post lead
+ */
+export function getPostLead(content) {
+	return content.split("<!-- more -->")[0];
 }
