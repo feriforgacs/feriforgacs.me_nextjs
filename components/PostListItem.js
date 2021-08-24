@@ -10,7 +10,7 @@ export default function PostListItem({ post }) {
 					<a>{post.title}</a>
 				</Link>
 			</h4>
-			<p className="post-list-item__lead" dangerouslySetInnerHTML={{ __html: marked(post.lead) }} />
+			<div className="post-list-item__lead" dangerouslySetInnerHTML={{ __html: marked(post.lead) }} />
 			<p className="post-list-item__date">{format(new Date(post.postDate), "dd MMMM y")}</p>
 		</div>
 	);
