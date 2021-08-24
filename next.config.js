@@ -6,5 +6,7 @@ module.exports = {
 			description: "",
 			ogImage: "https://feriforgacs.me/assets/default-share-image.png",
 		},
+		twitter: "feriforgacs",
+		siteURL: "https://feriforgacs.me",
 	},
 };

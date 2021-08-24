@@ -3,10 +3,14 @@ import fs from "fs";
 import marked from "marked";
 import path from "path";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { getPostData } from "../helpers/PostHelpers";
 import Layout from "../components/Layout";
+import SocialShare from "../components/SocialShare";
 
 export default function PostPage({ post }) {
+	const router = useRouter();
+
 	return (
 		<Layout classNames="post-page">
 			<div className="post">
@@ -17,10 +21,9 @@ export default function PostPage({ post }) {
 					<h1 className="post__title">{post.title}</h1>
 					<p className="post__date">{format(new Date(post.date), "dd MMMM y")}</p>
 					<div className="post__content" dangerouslySetInnerHTML={{ __html: marked(post.content) }} />
-					<Link href="/blog">
-						<a className="link-back">&larr; Back to posts</a>
-					</Link>
 				</div>
+
+				<SocialShare url={`${process.env.siteURL}${router.asPath}`} title={post.title} />
 			</div>
 		</Layout>
 	);
