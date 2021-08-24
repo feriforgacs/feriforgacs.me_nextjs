@@ -48,8 +48,12 @@ export function getPostData(slug) {
 		data: { title, image },
 	} = matter(fileContent);
 
+	// get post lead
+	const lead = getPostLead(content);
+
 	const post = {
 		title: title,
+		lead,
 		image: image,
 		date: [slug[0], slug[1], slug[2]],
 		content: content,

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { getPostData } from "../helpers/PostHelpers";
 import Layout from "../components/Layout";
+import Meta from "../components/Meta";
 import SocialShare from "../components/SocialShare";
 
 export default function PostPage({ post }) {
@@ -13,6 +14,7 @@ export default function PostPage({ post }) {
 
 	return (
 		<Layout classNames="post-page">
+			<Meta title={post.title} description={post.lead} />
 			<div className="post">
 				<div className="post__body">
 					<Link href="/blog">
