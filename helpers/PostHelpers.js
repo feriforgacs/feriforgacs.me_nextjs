@@ -52,11 +52,11 @@ export function getPostData(slug) {
 	const lead = getPostLead(content);
 
 	const post = {
-		title: title,
+		title,
 		lead,
-		image: image,
+		image,
 		date: [slug[0], slug[1], slug[2]],
-		content: content,
+		content,
 	};
 
 	return post;
