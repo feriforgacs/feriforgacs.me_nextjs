@@ -42,6 +42,10 @@ export default function Home({ posts }) {
 			<div className="latest-posts">
 				<h3>Latest posts</h3>
 				<PostList posts={posts} limit={5} />
+
+				<Link href="/blog">
+					<a>View all posts</a>
+				</Link>
 			</div>
 		</Layout>
 	);

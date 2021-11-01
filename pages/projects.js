@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../components/Layout";
 import Meta from "../components/Meta";
 import ProjectCard from "../components/ProjectCard";
@@ -21,6 +22,9 @@ export default function ProjectsPage() {
 
 			<ProjectCard projectName="Discount Hunt for Shopify" projectURL="https://discounthuntapp.com/" projectImage="discounthunt/discounthunt-icon.png" projectDateOfLaunch="2019.10." projectStatus="🟢 Active">
 				<p>With the help of Discount Hunt you can drive more traffic to your Shopify store, increase the time visitors spend on your site, grow the database of your potential customers and drive more sales.</p>
+				<Link href="/2019/10/30/my-first-shopify-extension">
+					<a>Learn more about the project</a>
+				</Link>
 			</ProjectCard>
 
 			<ProjectCard projectName="Gift Hunt for WordPress" projectURL="https://gifthuntplugin.com/" projectImage="gifthunt/gifthunt-icon.gif" projectDateOfLaunch="2019.10." projectStatus="🟢 Active">
@@ -29,23 +33,38 @@ export default function ProjectsPage() {
 
 			<ProjectCard projectName="Re-Product" projectImage="reproduct/re-product-icon.png" projectDateOfLaunch="2019.08." projectStatus="☠️ Shut down">
 				<p>Re-Product is an online market where you can trade with your used or new stuff without involving real money to the process.</p>
+				<Link href="/2019/09/05/re-product-an-online-market-for-your-trash">
+					<a>Learn more about the project</a>
+				</Link>
 			</ProjectCard>
 
 			<ProjectCard projectName="Maker Goals Menubar" projectURL="https://makergoals.netlify.app/" projectImage="maker-goals-menubar/maker_goals_menubar_icon.gif" projectDateOfLaunch="2019.06." projectStatus="🧟 Zombie">
 				<p>With the help of Maker Goals Menubar, you can easily manage your goals on Product Hunt from the menubar of your Mac.</p>
+				<Link href="/2019/06/17/my-first-desktop-application">
+					<a>Learn more about the project</a>
+				</Link>
 			</ProjectCard>
 
-			<ProjectCard projectName="Story View for WordPress" projectURL="https://storyviewplugin.com/" projectImage="storyview/storyview-icon.gif" projectDateOfLaunch="2019.05." projectStatus="🧟 Zombie">
+			<ProjectCard projectName="Story View for WordPress" projectURL="https://storyviewplugin.com/" projectImage="storyview/storyview-icon.gif" projectDateOfLaunch="2019.05." projectStatus="☠️ Shutdown">
 				<p>Story View is a WordPress plugin that you can use to create story-like versions of your posts.</p>
+				<Link href="/2019/06/14/from-avengers-endgame-to-my-first-successful-product">
+					<a>Learn more about the project</a>
+				</Link>
 			</ProjectCard>
 
 			<ProjectCard projectName="TWiS - The winner is" projectURL="https://twis.io/" projectImage="twis/twis-icon.gif" projectDateOfLaunch="2019.05." projectStatus="🛋️ Pivot">
 				<p>You can use TWiS.io to select random winners from Instagram comments or mentions in your Business profiles.</p>
+				<Link href="/2019/05/14/and-the-winner-is">
+					<a>Learn more about the project</a>
+				</Link>
 			</ProjectCard>
 
 			<ProjectCard projectName="CreativeDEVjobs" projectImage="creativedevjobs/creativedevjobs-thumbnail.png" projectDateOfLaunch="2019.05." projectStatus="☠️ Shutdown">
 				<p>CretiveDEVjobs came to life to become the number one job listing site for developers with a creative mind.</p>
 				<p>I believe that there are a huge amount of developers who like to use not just the algorithmical but also the creative part of their brain.</p>
+				<Link href="/2019/05/09/a-special-kind-of-developer-the-creative-one">
+					<a>Learn more about the project</a>
+				</Link>
 			</ProjectCard>
 
 			<ProjectCard projectName="HashtagCalendar" projectImage="hashtagcalendar/hashtagcalendar-icon.gif" projectDateOfLaunch="2019.01." projectStatus="☠️ Shutdown">
