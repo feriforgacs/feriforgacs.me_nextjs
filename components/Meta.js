@@ -8,7 +8,7 @@ export default function Meta({ title = "", description = process.env.meta.descri
 		<Head>
 			<title>{displayTitle}</title>
 			<meta name="description" content={description} />
-			<meta property="og:url" content={router.pathname} />
+			{/* <meta property="og:url" content={router.pathname} /> */}
 			<meta property="og:site_name" content={title} />
 			<meta property="og:image" content={ogImage} />
 		</Head>
