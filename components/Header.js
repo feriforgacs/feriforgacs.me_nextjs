@@ -12,6 +12,12 @@ export default function Header() {
 					</li>
 
 					<li>
+						<Link href="/100-days-of-making">
+							<a>100 days of making</a>
+						</Link>
+					</li>
+
+					<li>
 						<Link href="/blog">
 							<a>Blog</a>
 						</Link>

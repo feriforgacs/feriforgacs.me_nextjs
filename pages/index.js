@@ -5,7 +5,7 @@ import Avatar from "../components/Avatar";
 import PostList from "../components/PostList";
 import { getPostList } from "../helpers/PostHelpers";
 
-export default function Home({ posts }) {
+export default function Home({ posts, posts100DaysOfMaking }) {
 	return (
 		<Layout>
 			<Meta />
@@ -40,6 +40,15 @@ export default function Home({ posts }) {
 			</div>
 
 			<div className="latest-posts">
+				<h3>100 days of making</h3>
+				<PostList posts={posts100DaysOfMaking} limit={5} />
+
+				<Link href="/100-days-of-making">
+					<a>View all posts</a>
+				</Link>
+			</div>
+
+			<div className="latest-posts">
 				<h3>Latest posts</h3>
 				<PostList posts={posts} limit={5} />
 
@@ -53,10 +62,12 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
 	const posts = getPostList();
+	const posts100DaysOfMaking = getPostList("posts/100-days-of-making");
 
 	return {
 		props: {
 			posts,
+			posts100DaysOfMaking,
 		},
 	};
 }
