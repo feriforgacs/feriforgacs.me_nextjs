@@ -32,17 +32,21 @@ export default function PostPage({ post }) {
 }
 
 export async function getStaticPaths() {
-	const files = fs.readdirSync(path.join("posts"));
-	const paths = files.map((filename) => {
-		const postDate = filename.substr(0, 10).split("-");
-		const postSlug = filename.substr(11, filename.length).replace(".md", "");
+	const files = fs.readdirSync(path.join("posts"), { withFileTypes: true });
 
-		return {
-			params: {
-				slug: [...postDate, postSlug],
-			},
-		};
-	});
+	const paths = files
+		.filter((dirent) => dirent.isFile())
+		.map((dirent) => {
+			const filename = dirent.name;
+			const postDate = filename.substr(0, 10).split("-");
+			const postSlug = filename.substr(11, filename.length).replace(".md", "");
+
+			return {
+				params: {
+					slug: [...postDate, postSlug],
+				},
+			};
+		});
 
 	return {
 		paths,
