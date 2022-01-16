@@ -14,7 +14,7 @@ export default function PostPage({ post }) {
 
 	return (
 		<Layout classNames="post-page">
-			<Meta title={post.title} description={post.lead} />
+			<Meta title={post.title} description={post.lead} ogImage={`${process.env.siteURL}${post.image}`} />
 			<div className="post">
 				<div className="post__body">
 					<Link href="/100-days-of-making">

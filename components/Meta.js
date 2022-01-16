@@ -11,6 +11,10 @@ export default function Meta({ title = "", description = process.env.meta.descri
 			{/* <meta property="og:url" content={router.pathname} /> */}
 			<meta property="og:site_name" content={title} />
 			<meta property="og:image" content={ogImage} />
+
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:site" content="@feriforgacs" />
+			<meta name="twitter:creator" content="@feriforgacs" />
 		</Head>
 	);
 }
