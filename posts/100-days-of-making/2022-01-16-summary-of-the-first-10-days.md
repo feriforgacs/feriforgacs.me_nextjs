@@ -5,7 +5,7 @@ feature_image: "/assets/blogposts/2022/100-days-of-making/first-10-days.png"
 image: "/assets/blogposts/2022/100-days-of-making/first-10-days.png"
 ---
 
-I'm close to check all he items on my todo list regarding the features I'd like to add to the mvp. But the UI is still a crap. I haven't spent much time working on that because my main focus was to make the functions work and then make it look pretty.
+I'm close to check all the items on my todo list regarding the features I'd like to add to the mvp. But the UI is still a crap. I haven't spent much time working on that because my main focus was to make the functions work and then make it look pretty.
 
 <!-- more -->
 
