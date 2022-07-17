@@ -16,7 +16,7 @@ export default function ProjectsPage() {
 				<p>Display a message to visitors who came from Facebook, Google, an email campaign, an ad campaign, and much more.</p>
 			</ProjectCard>
 
-			<ProjectCard projectName="The Maker Report" projectURL="https://themakerreport.com/" projectImage="makerreport/makerreport.gif" projectDateOfLaunch="2020.02." projectStatus="🧟 Zombie">
+			<ProjectCard projectName="The Maker Report" projectURL="https://the-maker-report.netlify.app/" projectImage="makerreport/makerreport.gif" projectDateOfLaunch="2020.02." projectStatus="🧟 Zombie">
 				<p>The Maker Report conducts a survey every year to learn more about the maker community. The first study was completed by the beginning of 2020 and gives a snapshot of their year 2019.</p>
 			</ProjectCard>
 

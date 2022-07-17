@@ -4,7 +4,7 @@ feature_image: "/assets/blogposts/202007/first_1000.png"
 image: "/assets/blogposts/202007/first_1000.png"
 ---
 
-Last year, when I was working on [The Maker Report](https://themakerreport.com/results/2019/) and completed the survey myself, I summarized my year with a relatively short sentence: This is hard! And I really meant it. Taking the first step is easy, it’s a different story to keep walking.
+Last year, when I was working on [The Maker Report](https://the-maker-report.netlify.app/results/2019/) and completed the survey myself, I summarized my year with a relatively short sentence: This is hard! And I really meant it. Taking the first step is easy, it’s a different story to keep walking.
 
 <!-- more -->
 

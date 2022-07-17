@@ -30,7 +30,7 @@ While I was there, I also added PayPal as an additional payment option to Creati
 
 I used the [Drop-in UI](https://developers.braintreepayments.com/guides/drop-in/overview/javascript/v3) to add Braintree to my platforms and while I was working on the adjustments, I was thinking, why aren’t these additional fraud protection tools are turned on by default? I mean, who doesn’t want to be protected as much as possible? Maybe I don’t know enough about online payments to better understand the decision behind this, or maybe I’m not using the right tool.
 
-During afternoon I finished the landing page for [The Maker Report](https://themakerreport.com/). I’m not happy with the copy, I'll probably make some changes tomorrow, but most of the job is done, almost ready to go.
+During afternoon I finished the landing page for [The Maker Report](https://the-maker-report.netlify.app/). I’m not happy with the copy, I'll probably make some changes tomorrow, but most of the job is done, almost ready to go.
 
 **2019.12.11. Wednesday**
 
